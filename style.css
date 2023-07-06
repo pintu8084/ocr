@@ -1,41 +1,54 @@
-.card-body {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  padding: var(--padding-card, 2rem);
-  gap: 0.5rem;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-body {
-  background-color: lightblue;
+body{
+  font-family: "open sans";
+  color: #000;
+  font-size: 18px;
 }
-.card figure {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pt-10 {
-  padding-top: 2.5rem;
-}
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}    
+section{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(Ocean-Background-Image.jpg);
+  background-size: cover;
+  background-position: center center;
 
-
-.label {
-  display: flex;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  align-items: center;
-  justify-content: space-between;
-  /* padding-left: 0.25rem; */
-  padding-right: 0.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
-   
+.form-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:linear-gradient(rgba(0,0,0,0,3),rgba(0,0,0,0,3)) ;
+  width: 380px;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 60px #000;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+
+}
+.control input{
+  width: 100%;
+  display:block;
+  padding: 10px;
+  color: #222;
+  border: none;
+  outline: none;
+  margin: 1em 0;
+  border-radius: 0.5rem;
+}
        
       *{
         margin: 0px;
