@@ -1,172 +1,86 @@
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
+.navbar{
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+     
 }
 
-body{
-  font-family: "open sans";
-  color: #000;
-  font-size: 18px;
-}
 
-section{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background: url(Ocean-Background-Image.jpg);
-  background-size: cover;
-  background-position: center center;
-
-}
-.form-container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background:linear-gradient(rgba(0,0,0,0,3),rgba(0,0,0,0,3)) ;
-  width: 380px;
-  padding: 50px 30px;
-  border-radius: 10px;
-  box-shadow: 7px 7px 60px #000;
-}
-
-h1{
-  text-transform: uppercase;
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 2em;
-
-}
-.control input{
-  width: 100%;
-  display:block;
-  padding: 10px;
-  color: #222;
-  border: none;
-  outline: none;
-  margin: 1em 0;
-  border-radius: 0.5rem;
+.navbar-brand{
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
 }
 
 
 
-
-*{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  box-sizing: border-box;
-
+.login-button{
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
 }
-body{
-font-family: Arial;
-}
-nav{
-background-color: rgb(90, 145, 166);
-height: 70px;
-width: 100%;
-}
-
-label.logo{
-color: white;
-font-size: 25px;
-line-height: 80px;
-padding: 0 100px;
-font-weight: bold;
-}
-
-a{
-  text-decoration: none;
-}
-nav ul{
-float: right;
-margin-right:30px;
+.login-button:hover {
+    background-color: #00b383;
 
 }
-
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 12px;
-
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
 }
-nav ul li a {
-  color: black;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
- 
+.navbar-toggler:focus, .btn-close:focus{
+box-shadow: none;
+outline: none;
 }
 
-
-
-a.active,a:hover{
-  background: #1b9bff;
-  transition: .5s;
-  
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
 }
-    
-      .table{
-        white-space: nowrap;
-        font-size: 0.85rem;
-        line-height: 2rem;
-        text-align: left;
-       
-
-      }
-      .flex{
-        display: flex;
-      }
-.justify-center{
-  justify-content: center;
+.nav-link:hover,.nav-link.active{
+    color: black;
 }
-.input{
-  height: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  border-width: 1px;
-  border-radius: var(--rounnded-btn,0.5rem);
+@media (min-width:991px){
+   .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #00b383;
+    visibility: hidden;
+    transition: 0.3s ease-in-out ;
 }
-.join {
-  display: inline-flex;
-  align-items: stretch;
-  padding: auto;
-  border-radius: var(--rounded-btn, 0.5rem);
-
-}
-.pt-8 {
-  padding-top: 2rem;
-}
-.w-full {
-  width: 100%;
-}
-.mt-8 {
- margin-top: 0rem; 
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+   }
 }
 
 
-body{
-  margin: 0;
-  font-family: sans-serif;
 
+.hero-section{
+    background: url(hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
-*{
-  box-sizing: border-box;
-}
-.form-box{
-  max-width: 400px;
-  background-color: rgba(255,255,255,0.1);
-  margin: 150px auto;
-padding: 40px;
-}
-.form-box{
-  max-width: 400px;
-  background-color: rgba(255,255,255,0.1);
-  margin: 150px auto;
-padding: 40px;
+.hero-section::before{
+    background-color: rgba(0, 0, 0, 0,6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
